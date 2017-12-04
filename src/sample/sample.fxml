@@ -1,8 +1,49 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="465.0" fitWidth="687.0" layoutX="26.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/descarga.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="107.0" layoutY="14.0" text="ÁRBOL" textFill="#171717">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="202.0" fitWidth="264.0" layoutX="14.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/Captura.PNG" />
+         </image>
+      </ImageView>
+      <HBox layoutX="320.0" layoutY="106.0" prefHeight="77.0" prefWidth="280.0">
+         <children>
+            <ListView fx:id="ordenList" prefHeight="77.0" prefWidth="288.0" />
+         </children>
+      </HBox>
+      <Label layoutX="431.0" layoutY="75.0" text="Orden" textFill="#fc090f">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="preBtn" layoutX="27.0" layoutY="306.0" mnemonicParsing="false" text="Pre Orden" />
+      <Button fx:id="inBtn" layoutX="125.0" layoutY="306.0" mnemonicParsing="false" text="In Orden" />
+      <Button fx:id="postBtn" layoutX="220.0" layoutY="306.0" mnemonicParsing="false" text="Post Orden" />
+      <Button fx:id="contarBtn" layoutX="27.0" layoutY="359.0" mnemonicParsing="false" text="Contar Nodos" />
+      <Button fx:id="minBtn" layoutX="143.0" layoutY="359.0" mnemonicParsing="false" text="Nodo Minímo" />
+      <Button fx:id="maxBtn" layoutX="258.0" layoutY="359.0" mnemonicParsing="false" text="Nodo Máximo" />
+      <Button fx:id="buscarBtn" layoutX="495.0" layoutY="294.0" mnemonicParsing="false" text="Buscar Nodos" />
+      <TextField fx:id="buscarTXF" layoutX="495.0" layoutY="331.0" />
+   </children>
+</AnchorPane>

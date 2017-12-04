@@ -4,6 +4,7 @@ package sample;
  * Created by Carlos Daniel on 28/11/2017.
  */
 public class ArbolBinario {
+
     public static void preOrden(Nodo raiz ){
         if(raiz !=null){
             System.out.println (raiz.getDato ()+" ");
